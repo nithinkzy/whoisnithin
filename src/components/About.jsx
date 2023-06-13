@@ -7,7 +7,7 @@ import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 
-const ServiceCard = ({ index, title, icon }) => {
+const ServiceCard = ({ index, title, sub, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
@@ -18,10 +18,11 @@ const ServiceCard = ({ index, title, icon }) => {
           options={{ max: 45, scale: 1, speed: 450 }}
           className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
-          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-          <h3 className="text-white text-[20px] font-bold text-center">
+          <h3 className="text-white text-[12px]  text-center">
             {title}
           </h3>
+          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+          <p className="font-bold text-[12px]" >{sub}</p>
         </div>
       </motion.div>
     </Tilt>
@@ -33,19 +34,58 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>About me.</h2>
       </motion.div>
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-      >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-        voluptatem error aut quisquam sapiente iusto iste voluptate nemo nobis
-        quas, vitae mollitia, tenetur unde fugit. Consequuntur quas tenetur
-        consequatur molestias!
-      </motion.p>
+      <div className="md:columns-2 ">
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] break-after-column"
+        >
+          I'm Nithin, a dedicated and skilled{" "}
+          <span className="underline underline-offset-4 hover:underline-offset-8">
+            full stack developer with 5 years of experience
+          </span>{" "}
+          in building dynamic web applications. With a bachelor's degree in
+          computer science and an advanced diploma in software engineering
+          technology, I've honed my skills to deliver exceptional results. As a
+          seasoned{" "}
+          <span className="underline underline-offset-4 hover:underline-offset-8">
+            freelance developer with 7 years of experience
+          </span>
+          , I've collaborated with diverse clients, showcasing their unique
+          strengths through visually captivating websites.
+          <br />
+          <br />
+          I'm passionate about using code to change the world and empower
+          businesses to thrive. Let's embark on a journey of digital innovation
+          together.
+        </motion.p>
+        <motion.div
+          variants={fadeIn("", "", 0.1, 1)}
+          className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-end"
+        >
+          <ul>
+            <li
+              className={`${styles.sectionSubText} underline underline-offset-4 hover:underline-offset-8 mb-`}
+            >
+              EDUCATION
+            </li>
+            <li>Jan/2018 - Dec/2019</li>
+            <li>
+              Advanced Diploma - Software Engineering Technology
+              {/* Advanced Diploma Co-op Fast-Track */}
+            </li>
+            <li>Centennial College, Toronto, ON</li>
+            <br />
+            <li>Jul/ 2013 – Jul/ 2017 </li>
+            <li>Bachelor of Engineering – Computer Science</li>
+            <li>Visvesvaraya Technological University, Bangalore, India</li>
+          </ul>
+        </motion.div>
+      </div>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <motion.p variants={fadeIn("", "", 0.1, 1)} className="text-center mt-6">Fascinating Facts About Me</motion.p>
+      <div className="mt-10 flex flex-wrap gap-10 justify-evenly">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

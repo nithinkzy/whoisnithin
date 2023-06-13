@@ -15,14 +15,20 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
+    lgc,
+    trc,
     carrent,
     jobit,
     tripguide,
     threejs,
+    bootstrap,
+    wordpress,
+    php,
+    scss,
+    npm,
+    asp,
+    java,
+    python,
 } from "../assets";
 
 export const navLinks = [
@@ -42,19 +48,25 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Web Developer",
+        title: "Speedy Typist",
+        sub: "406 CPM",
         icon: web,
     },
     {
-        title: "React Native Developer",
+        title: "Shutterbug",
+        sub: "Photographer",
+
         icon: mobile,
     },
     {
-        title: "Backend Developer",
+        title: "Master of Visuals",
+        sub: "Video & Photo Editor",
+
         icon: backend,
     },
     {
-        title: "Content Creator",
+        title: "Karate",
+        sub: "Brown 1st Belt",
         icon: creator,
     },
 ];
@@ -68,38 +80,50 @@ const technologies = [
         name: "CSS 3",
         icon: css,
     },
+    // {
+    //     name: "SCSS",
+    //     icon: scss,
+    // },
     {
         name: "JavaScript",
         icon: javascript,
     },
-    {
-        name: "TypeScript",
-        icon: typescript,
-    },
+    // {
+    //     name: "TypeScript",
+    //     icon: typescript,
+    // },
+    // {
+    //     name: "NPM",
+    //     icon: npm,
+    // },
     {
         name: "React JS",
         icon: reactjs,
     },
     {
-        name: "Redux Toolkit",
-        icon: redux,
+        name: "Wordpress",
+        icon: wordpress,
     },
-    {
-        name: "Tailwind CSS",
-        icon: tailwind,
-    },
+    // {
+    //     name: "Tailwind CSS",
+    //     icon: tailwind,
+    // },
+    // {
+    //     name: "Bootstrap",
+    //     icon: bootstrap,
+    // },
     {
         name: "Node JS",
         icon: nodejs,
     },
-    {
-        name: "MongoDB",
-        icon: mongodb,
-    },
-    {
-        name: "Three JS",
-        icon: threejs,
-    },
+    // {
+    //     name: "MongoDB",
+    //     icon: mongodb,
+    // },
+    // {
+    //     name: "Three JS",
+    //     icon: threejs,
+    // },
     {
         name: "git",
         icon: git,
@@ -108,63 +132,84 @@ const technologies = [
         name: "figma",
         icon: figma,
     },
+    // {
+    //     name: "docker",
+    //     icon: docker,
+    // },
     {
-        name: "docker",
-        icon: docker,
+        name: "ASP.NET",
+        icon: asp,
+    },
+    {
+        name: "Java",
+        icon: java,
+    },
+    {
+        name: "Python",
+        icon: python,
+    },
+    {
+        name: "php",
+        icon: php,
     },
 ];
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Full Stack Developer",
+        company_name: "LGC",
+        icon: lgc,
         iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        date: "Sep 2022 – Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Reduced potential security risks by fixing vulnerabilities in website code, updating/removing WordPress Themes and plugins, resulting in a 98% decrease in security risks.",
+            "Upgraded internal applications to the latest PHP version and migrated it to a new server, resulting in a 30% improvement in application performance and a 90% reduction in security vulnerabilities.",
+            "Developed a new QR generator for Excel macros, increasing workflow efficiency by 70% and eliminating data entry errors.",
+            "Improved reliability and accessibility by successfully migrating the applications from the new acquisition to LGC's infrastructure, resulting in a 99.9% uptime and seamless access for users.",
+            "Documented: development procedures, tools,  user manuals, website troubleshooting for customer service, daily website update flow, career updates guide.",
+            "Improved catalogue on the website by 95% developing a Catalogue Management Tool (CMT) and Missing Image Identifier (MII) using Python (pandas) which generates and sends reports of missing data and images to respective departments.",
+            "Automated uploading documents, images and data to website seamlessly by writing Python scripts which led to 100% manual free uploads.",
         ],
     },
     {
         title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
+        company_name: "LGC",
+        icon: lgc,
+        iconBg: "#E6DEDD",
+        date: "Jun 2020 - Sep 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Streamlined order processing and improved customer experience by integrating the website's order processing with Salesforce API, reducing manual work by 90%.",
+            "Accomplished 100% better tracking and analysis of user data by integrating website user registration with Pardot, leading to  improved insights and targeted marketing efforts.",
+            "Optimized website to handle 1 million+ users monthly by caching, database restructure and code.",
+            "Trained customer service and order processing to adapt to rapid website improvements.",
+            "Established accessibility by making sure all pages are designed in a way that supports accessibility.",
         ],
     },
     {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
+        title: "Web Developer",
+        company_name: "Toronto Research Chemicals",
+        icon: trc,
+        iconBg: "#383E56",
+        date: "Jan 2020 - Jun 2020",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Maintained high customer satisfaction with a Net Promoter Score (NPS) of 9 by incorporating analytics tools and working closely with the Marketing Team and Business Analysts.",
+            "Served as a subject matter expert on website UX/UI, best practices, integrations, and troubleshooting for internal teams and external vendors worldwide.",
+            "Boosted online revenue by 290.15% through the integration of the Braintree Payment Gateway.",
+            "Developed custom WordPress themes, templates, and plugins while following best practices for both Toronto Research Chemicals and Synfine Research Limited websites (currently discontinued).",
+        ],
+    },
+    {
+        title: "Junior Web Developer",
+        company_name: "Toronto Research Chemicals",
+        icon: trc,
+        iconBg: "#E6DEDD",
+        date: "Sep 2018 - Dec 2019",
+        points: [
+            "Increased daily active users by 258.30 % by spearheading custom eCommerce to the existing website.",
+            "Enhanced customer satisfaction by designing a user-friendly shopping UI/UX - NPS score of 9.",
+            "Improved user experience and sales by piloting a chemical structure search tool (page value of 54.04%). (https://www.trc-canada.com/structure-search/)",
+            "Established custom quotation and bulk order tool raising page value to 29.74% revenue. ",
+            "Introduced and implemented Google Analytics to website, significantly improving user tracking and driving sales growth",
         ],
     },
 ];
