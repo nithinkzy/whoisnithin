@@ -17,9 +17,6 @@ import {
     docker,
     lgc,
     trc,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
     bootstrap,
     wordpress,
@@ -29,6 +26,18 @@ import {
     asp,
     java,
     python,
+    alkhaleej,
+    infratec,
+    chris,
+    mopasangValath,
+    skillTrainingIndia,
+    vanGogh,
+    chestHunt,
+    diceRoller,
+    quasarTwit,
+    spyderWeb,
+    twinTanker,
+    webWrapper
 } from "../assets";
 
 export const navLinks = [
@@ -37,8 +46,16 @@ export const navLinks = [
         title: "About",
     },
     {
-        id: "work",
-        title: "Work",
+        id: "experience",
+        title: "Experience",
+    },
+    {
+        id: "works",
+        title: "Works",
+    },
+    {
+        id: "projects",
+        title: "Projects",
     },
     {
         id: "contact",
@@ -217,94 +234,330 @@ const experiences = [
 const testimonials = [
     {
         testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
+            "Working with Nithin was a game-changer for me as an artist with no technical background; he not only understood my need for an online presence but transformed it into a stunning website that perfectly showcases my art.",
+        name: "Vangogh Valath",
+        designation: "Owner",
+        company: "Vangogh arts",
+        image: "https://vangoghvalath.com/wp-content/themes/vangogh/assets/vangogh_profile.png",
     },
     {
         testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
+            "I was initially skeptical about the possibility of creating a website that truly captured the beauty of our product, but you exceeded my expectations, demonstrating your remarkable skills and delivering an exceptional website in just two days.",
+        name: "KJ Thomas",
+        designation: "CEO",
+        company: "Bag Master",
+        image: "",
+    },
+    // {
+    //     testimonial:
+    //         "After Nithin optimized our website, our traffic increased by 50%. We can't thank him enough!",
+    //     name: "Chriss Blair Vincent",
+    //     designation: "Founder",
+    //     company: "Silver Brush Studio",
+    //     image: "https://test111.chrisblairvincent.com/wp-content/themes/chriss/assets/images/team/Chris.jpg",
+    // },
+];
+
+const works = [
+    {
+        name: "Van Gogh Valath",
+        description:
+            "Explore the portfolio website of vivid imagination and artistic brilliance of Vangogh Valath, a concept artist who brings captivating worlds to life through his visionary creations.",
+        tags: [
+            {
+                name: "php",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "wordpress",
+                color: "green-text-gradient",
+            },
+            {
+                name: "gsap",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "custom-theme",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: vanGogh,
+        source_code_link: "https://vangoghvalath.com/",
     },
     {
-        testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
+        name: "Skill Training India",
+        description:
+            "Empowering Communities, Creating a Sustainable Future: Skill Training India drives social transformation through green business education and eco-friendly practices.",
+        tags: [
+            {
+                name: "wordpress",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "bootstrap",
+                color: "green-text-gradient",
+            },
+            {
+                name: "php",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "custom-theme",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: skillTrainingIndia,
+        source_code_link: "https://skilltrainingindia.com/",
+    },
+    {
+        name: "Silver Brush Studio",
+        description:
+            "A leading Indian creative agency specializing in transformative art and design solutions, elevating spaces and experiences with unparalleled craftsmanship and visionary expertise.",
+        tags: [
+            {
+                name: "wordpress",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "bootstrap",
+                color: "green-text-gradient",
+            },
+            {
+                name: "php",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "custom-theme",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: chris,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "Infratec",
+        description:
+            "Powering Digital Transformation: Infratec, the Middle East's premier system integrator, delivers customized IT solutions for businesses across sectors, driving innovation and growth.",
+        tags: [
+            {
+                name: "wordpress",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "bootstrap",
+                color: "green-text-gradient",
+            },
+            {
+                name: "php",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "custom-theme",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: infratec,
+        source_code_link: "https://infratec.ae/",
+    },
+    {
+        name: "Mopasang Valath",
+        description:
+            "Capturing Life's Colors: Mopasang Valath, a renowned artist and state patron, creates vibrant watercolor masterpieces, exhibits globally, and conducts engaging workshops, leaving an indelible mark on the art world.",
+        tags: [
+            {
+                name: "wordpress",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "bootstrap",
+                color: "green-text-gradient",
+            },
+            {
+                name: "php",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "custom-theme",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: mopasangValath,
+        source_code_link: "https://mopasangvalath.com/",
+    },
+    {
+        name: "Alkhaleejtr",
+        description:
+            "Revolutionizing Digital Transformation: Alkhaleejtr empowers businesses with cutting-edge IT solutions, leveraging the latest technologies to drive digital innovation and elevate client performance.",
+        tags: [
+            {
+                name: "wordpress",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "bootstrap",
+                color: "green-text-gradient",
+            },
+            {
+                name: "php",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "custom-theme",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: alkhaleej,
+        source_code_link: "https://alkhaleejtr.com/",
     },
 ];
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Web Wrapper",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Web Wrapper: Empowering users without coding expertise, this interactive web application features a WYSIWYG editor, enabling effortless creation of stunning websites tailored to the unique needs of small-scale businesses, marketers, and content creators.",
         tags: [
             {
-                name: "react",
+                name: "JavaScript",
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "jQuery",
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "PHP",
                 color: "pink-text-gradient",
             },
+            {
+                name: "custom-theme",
+                color: "blue-text-gradient",
+            },
         ],
-        image: carrent,
-        source_code_link: "https://github.com/",
+        image: webWrapper,
+        source_code_link: "https://alkhaleejtr.com/",
     },
     {
-        name: "Job IT",
+        name: "Sypder Web",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "Spyder Web: Rediscover the power of community and meaningful connections with our revolutionary app that brings people together, allowing users to create and join events in their area, fostering socialization and bridging the gap between communities while offering exclusive promotional opportunities for local businesses.",
         tags: [
             {
-                name: "react",
+                name: "laravel",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "bootstrap",
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "php",
                 color: "pink-text-gradient",
             },
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
+        image: spyderWeb,
+        source_code_link: "https://github.com/nithinkzy/laravel-syderweb",
     },
     {
-        name: "Trip Guide",
+        name: "Twin Tanker",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "Tanker Battle: Engage in an exhilarating multiplayer or single-player experience with this JavaScript game project, powered by EaselJS, PreloadJS, SoundJS, and TweenJS, as you strategize and dominate the battlefield in an epic tanker showdown.",
         tags: [
             {
-                name: "nextjs",
+                name: "JavaScript",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "EaselJS",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "TweenJS",
                 color: "pink-text-gradient",
             },
+            {
+                name: "TypeScript",
+                color: "blue-text-gradient",
+            },
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        image: twinTanker,
+        source_code_link: "https://nithinkzy.github.io/twin-tanker-game/",
     },
+    // {
+    //     name: "QuasarTwit",
+    //     description:
+    //         "Step into the world of microblogging with this JavaScript project, built using the Quasar framework, delivering a sleek and intuitive clone of Twitter's essence in a simplified form.",
+    //     tags: [
+    //         {
+    //             name: "quasar",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "JavaScript",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "npm",
+    //             color: "pink-text-gradient",
+    //         },
+
+    //     ],
+    //     image: quasarTwit,
+    //     source_code_link: "https://github.com/nithinkzy/quasar-twitter-clone",
+    // },
+
+    // {
+    //     name: "Chest Hunt",
+    //     description:
+    //         "Hunt for Treasures: Immerse yourself in a thrilling adventure with this JavaScript game project, powered by EaselJS, PreloadJS, SoundJS, and TweenJS, as you embark on a quest to find hidden chests and unlock exciting rewards in this captivating single-player game.",
+    //     tags: [
+    //         {
+    //             name: "wordpress",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "bootstrap",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "php",
+    //             color: "pink-text-gradient",
+    //         },
+    //         {
+    //             name: "custom-theme",
+    //             color: "blue-text-gradient",
+    //         },
+    //     ],
+    //     image: chestHunt,
+    //     source_code_link: "https://nithinkzy.github.io/chest-hunt-game/",
+    // },
+
+    // {
+    //     name: "The Dice Roller",
+    //     description:
+    //         "Roll the Dice: Experience the thrill of chance with this interactive JavaScript project using EaselJS, PreloadJS, SoundJS, and TweenJS, bringing a simple yet captivating dice roller to life.",
+    //     tags: [
+    //         {
+    //             name: "JavaScript",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "EaselJS",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "TweenJS",
+    //             color: "pink-text-gradient",
+    //         },
+    //         {
+    //             name: "PreloadJS",
+    //             color: "blue-text-gradient",
+    //         },
+    //     ],
+    //     image: diceRoller,
+    //     source_code_link: "https://nithinkzy.github.io/dice-roller-game/",
+    // },
+
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, works, projects };

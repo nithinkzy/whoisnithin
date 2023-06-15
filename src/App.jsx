@@ -7,9 +7,11 @@ import {
   Hero,
   Navbar,
   Tech,
+  Footer,
   Works,
   StarsCanvas,
 } from "./components";
+import Freelance from "./components/Freelance";
 
 const App = () => {
   return (
@@ -19,16 +21,18 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
-        <About/>
-        <Experience/>
-        <Tech/>
-        <Works/>
-        <Feedbacks/>
+        <About />
+        <Experience />
+        <Tech />
+        <Freelance />
+        <Works />
+        <Feedbacks />
 
         <div className="relative z-0">
-          <Contact/>
-          <StarsCanvas/>
+          <Contact />
+          <StarsCanvas />
         </div>
+        <Footer/>
       </div>
     </BrowserRouter>
   );

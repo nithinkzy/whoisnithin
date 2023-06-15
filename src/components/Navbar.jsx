@@ -15,13 +15,13 @@ const Navbar = () => {
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           to="/"
-          className="flex items-center gap-2"
+          className="flex items-center gap-2  border-double border-2 rounded-full shadow-lg shadow-indigo-500/50 hover:scale-125 hover:rounded-lg bg-[#915eff]"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="Logo" className="w-9 h-9 object-contain" />
+          <img src={logo} alt="Logo" className="w-auto h-12 object-fit rounded-full" />
           {/* <p className="text-white text-[18px] font-bold cursor-pointer">
             Nithin Kumar
           </p> */}
@@ -32,7 +32,7 @@ const Navbar = () => {
               key={link.id}
               className={`${
                 active === link.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-white text-[18px] font-medium cursor-pointer  hover:underline underline-offset-8 `}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>

@@ -46,7 +46,7 @@ const Feedbacks = () => {
         className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>What Others say</p>
+          <p className={`${styles.sectionSubText} animate-pulse`}>What Others say</p>
           <h2 className={styles.sectionHeadText}>Testimonials</h2>
         </motion.div>
       </div>
@@ -55,7 +55,6 @@ const Feedbacks = () => {
           <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
         ))}
       </div>
-      Feedbacks
     </div>
   );
 };

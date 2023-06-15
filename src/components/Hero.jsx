@@ -9,8 +9,8 @@ const Hero = () => {
         className={`${styles.paddingX} h-2/3 absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#915eff]"></div>
-          <div className="w-1 sm:h-80 h-40 violet-gradient"></div>
+          <div className="w-5 h-5 rounded-full bg-[#915eff] animate-bounce"></div>
+          <div className="w-1 sm:h-80 h-40 violet-gradient animate-pulse"></div>
         </div>
         <div className="flex flex-col justify-between h-2/3">
           <h1 className={`${styles.heroSubText} mb-5`}>
@@ -18,11 +18,13 @@ const Hero = () => {
             <span className="text-[#915eff] text-start"> Nithin 👋.</span>
           </h1>
           <h1 className={`${styles.heroHeadText} mb-6 text-center`}>
-            Change  the world with <span className="text-[#915eff]">Code.</span>
+            Change the world with{" "}
+            <span className="text-[#915eff] animate-pulse">Code.</span>
           </h1>
           <p className={`${styles.heroSubText} text-end`}>
             {" "}
-            Full-stack developer at LGC. <br />Freelance Web Wizard.
+            Full-stack developer at LGC. <br />
+            Freelance Web Wizard.
           </p>
         </div>
       </div>

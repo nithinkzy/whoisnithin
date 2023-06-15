@@ -10,7 +10,7 @@ import { Tube } from "@react-three/drei";
 
 const Contact = () => {
   const formRef = useRef();
-  const [form, setform] = useState({
+  const [form, setForm] = useState({
     name: "",
     email: "",
     message: "",
@@ -63,8 +63,8 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <p className={`${styles.sectionSubText} animate-pulse`}>Let's change the world with Code.</p>
+        <h3 className={styles.sectionHeadText}>Let's Talk.</h3>
 
         <form
           ref={formRef}
@@ -78,7 +78,7 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your name ?"
+              placeholder="What's your awesome name? "
               className="bg-tertiary py-4 px-6 placeholder:text-secondary
               text-white rounded-lg outlined-none border-none font-medium"
             />
@@ -90,7 +90,7 @@ const Contact = () => {
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your email ?"
+              placeholder="Don't worry, I won't spam your inbox!"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary
               text-white rounded-lg outlined-none border-none font-medium"
             />
@@ -102,16 +102,16 @@ const Contact = () => {
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="What's do you want to say ?"
+              placeholder="Drop a 'Hi' to unlock the secrets of coding, level up your skills, or hire me as your coding superhero!"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary
               text-white rounded-lg outlined-none border-none font-medium"
             />
           </label>
           <button
-            className="bg-tertiary py-3 px-8 outline-non w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+            className="animate-pulse bg-tertiary py-3 px-8 outline-non w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
             type="submit"
           >
-            {loading ? "Sending.." : "Send"}
+            {loading ? "Sending the magic...✨" : "Send your message! 💌"}
           </button>
         </form>
       </motion.div>

@@ -59,7 +59,7 @@ const Works = () => {
     // Using react div as we would be wrapping it in wrapper
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My Projects</p>
+        <p className={`${styles.sectionSubText} animate-pulse`}>My Projects</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
       </motion.div>
       <div className="w-full flex">
@@ -67,10 +67,10 @@ const Works = () => {
           variants={fadeIn("", ",0.1,1")}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
-          tenetur quidem, blanditiis perferendis accusantium fuga temporibus
-          porro. Aspernatur voluptatum quas suscipit, ex dignissimos possimus
-          minima, asperiores modi quae impedit rerum.
+          My Projects: Discover a compilation of my diverse and engaging
+          endeavors, showcasing my passion for learning, creativity, and
+          continuous growth. Explore the results of my dedicated efforts and get
+          inspired by the variety of projects I've brought to fruition.
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">
@@ -78,8 +78,15 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
+      <p className="mt-20 text-center">
+        For more projects, visit my{" "}
+        <span className="animate-pulse underline underline-offset-8 hover:underline-offset-2">
+          <a href="https://github.com/nithinkzy">GitHub</a>{" "}
+        </span>
+        repository.
+      </p>
     </>
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");

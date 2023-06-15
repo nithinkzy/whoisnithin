@@ -1,9 +1,12 @@
-import logo from "./logo.svg";
+import logo from "./logo.gif";
+import stand from "./stand.png";
+import dance from "./dance.gif";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import link from "./link-solid.svg";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -34,10 +37,19 @@ import bootstrap from "./tech/bootstrap.svg";
 import lgc from "./company/lgc.png";
 import trc from "./company/trc.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import alkhaleej from './works/alkhaleej.png';
+import infratec from './works/infratec .png';
+import mopasangValath from './works/mopasangValath.png';
+import skillTrainingIndia from './works/skillTrainingInida.png';
+import vanGogh from './works/vanGogh.png';
+import chris from './works/chriss.png';
 
+import chestHunt from './projects/chestHunt.png';
+import diceRoller from './projects/diceRoller.png';
+import quasarTwit from './projects/quasarTwit.png';
+import spyderWeb from './projects/spyderWeb.png';
+import twinTanker from './projects/twinTanker.png';
+import webWrapper from './projects/webWr.png';
 export {
   logo,
   backend,
@@ -62,9 +74,6 @@ export {
   threejs,
   lgc,
   trc,
-  carrent,
-  jobit,
-  tripguide,
   bootstrap,
   wordpress,
   php,
@@ -73,4 +82,19 @@ export {
   asp,
   java,
   python,
+  alkhaleej,
+  infratec,
+  mopasangValath,
+  chris,
+  skillTrainingIndia,
+  vanGogh,
+  link,
+  chestHunt,
+diceRoller,
+quasarTwit,
+spyderWeb,
+twinTanker,
+webWrapper,
+stand,
+dance,
 };

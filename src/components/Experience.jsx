@@ -50,7 +50,7 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What I have done</p>
+        <p className={`${styles.sectionSubText} animate-pulse`}>What I have done</p>
         <h2 className={styles.sectionHeadText}>Work Experience.</h2>
       </motion.div>
 
@@ -65,4 +65,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Experience, "experience");
