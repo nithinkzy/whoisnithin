@@ -14,11 +14,13 @@ const ProjectCard = ({
   image,
   source_code_link,
 }) => {
+  
   return (
     <motion.div >
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+  
       >
         <div className="relative w-full h-[230px]">
           <img
@@ -26,10 +28,10 @@ const ProjectCard = ({
             alt={name}
             className="w-full h-full object-cover rounded-2xl"
           />
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          <div className="absolute inset-0 flex justify-end m-3 card-img_hover ">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
-              className="green-pink-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              className="green-pink-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer animate-bounce"
             >
               <img
                 src={link}
