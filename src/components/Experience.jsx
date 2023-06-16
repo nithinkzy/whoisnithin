@@ -49,7 +49,7 @@ const ExperienceCard = ({ experience }) => (
 const Experience = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div >
         <p className={`${styles.sectionSubText} animate-pulse`}>What I have done</p>
         <h2 className={styles.sectionHeadText}>Work Experience.</h2>
       </motion.div>
