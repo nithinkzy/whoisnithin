@@ -61,6 +61,14 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
+
+      <p className="mt-20 text-center">
+        Click  {" "}
+        <span className="animate-pulse underline underline-offset-8 hover:underline-offset-2">
+          <a href="src/assets/Nithin Kumar - Resume.pdf">here</a>{" "}
+        </span>
+        to Download Full Resume.
+      </p>
     </>
   );
 };
