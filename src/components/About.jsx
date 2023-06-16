@@ -9,20 +9,18 @@ import { SectionWrapper } from "../hoc";
 
 const ServiceCard = ({ index, title, sub, icon }) => {
   return (
-    <Tilt className="xs:w-[250px] w-full">
+    <Tilt className="w-[90%]">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card snap-center shrink-0"
       >
         <div
           options={{ max: 45, scale: 1, speed: 450 }}
           className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
-          <h3 className="text-white text-[12px]  text-center">
-            {title}
-          </h3>
+          <h3 className="text-white text-[12px]  text-center">{title}</h3>
           <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-          <p className="font-bold text-[12px]" >{sub}</p>
+          <p className="font-bold text-[12px]">{sub}</p>
         </div>
       </motion.div>
     </Tilt>
@@ -32,7 +30,7 @@ const ServiceCard = ({ index, title, sub, icon }) => {
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()} >
+      <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} animate-pulse`}>Introduction</p>
         <h2 className={styles.sectionHeadText}>About me.</h2>
       </motion.div>
@@ -84,8 +82,13 @@ const About = () => {
         </motion.div>
       </div>
 
-      <motion.p variants={fadeIn("", "", 0.1, 1)} className="text-center mt-6">Fascinating Facts About Me</motion.p>
-      <div className="mt-10 flex flex-wrap gap-10 justify-evenly">
+      <motion.p variants={fadeIn("", "", 0.1, 1)} className="text-center mt-6">
+        Fascinating Facts About Me
+      </motion.p>
+      <div className="mt-10 w-full flex gap-6 snap-x snap-mandatory overflow-x-auto ">
+        {/* <div class="snap-center shrink-0">
+          <div class="shrink-0 w-4 sm:w-48"></div>
+        </div> */}
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
