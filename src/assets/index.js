@@ -48,6 +48,7 @@ import chestHunt from './projects/chestHunt.png';
 import diceRoller from './projects/diceRoller.png';
 import quasarTwit from './projects/quasarTwit.png';
 import spyderWeb from './projects/spyderWeb.png';
+import qrbizid from './projects/qrbizid.png';
 import twinTanker from './projects/twinTanker.png';
 import webWrapper from './projects/webWr.png';
 export {
@@ -93,6 +94,7 @@ export {
 diceRoller,
 quasarTwit,
 spyderWeb,
+qrbizid,
 twinTanker,
 webWrapper,
 stand,

@@ -34,7 +34,7 @@ import {
     vanGogh,
     chestHunt,
     diceRoller,
-    quasarTwit,
+    qrbizid,
     spyderWeb,
     twinTanker,
     webWrapper
@@ -178,15 +178,15 @@ const experiences = [
         icon: lgc,
         iconBg: "#383E56",
         date: "Sep 2022 – Present",
-        points: [
-            "Reduced potential security risks by fixing vulnerabilities in website code, updating/removing WordPress Themes and plugins, resulting in a 98% decrease in security risks.",
-            "Upgraded internal applications to the latest PHP version and migrated it to a new server, resulting in a 30% improvement in application performance and a 90% reduction in security vulnerabilities.",
-            "Developed a new QR generator for Excel macros, increasing workflow efficiency by 70% and eliminating data entry errors.",
-            "Improved reliability and accessibility by successfully migrating the applications from the new acquisition to LGC's infrastructure, resulting in a 99.9% uptime and seamless access for users.",
-            "Documented: development procedures, tools,  user manuals, website troubleshooting for customer service, daily website update flow, career updates guide.",
-            "Improved catalogue on the website by 95% developing a Catalogue Management Tool (CMT) and Missing Image Identifier (MII) using Python (pandas) which generates and sends reports of missing data and images to respective departments.",
-            "Automated uploading documents, images and data to website seamlessly by writing Python scripts which led to 100% manual free uploads.",
-        ],
+        // points: [
+        //     "Reduced potential security risks by fixing vulnerabilities in website code, updating/removing WordPress Themes and plugins, resulting in a 98% decrease in security risks.",
+        //     "Upgraded internal applications to the latest PHP version and migrated it to a new server, resulting in a 30% improvement in application performance and a 90% reduction in security vulnerabilities.",
+        //     "Developed a new QR generator for Excel macros, increasing workflow efficiency by 70% and eliminating data entry errors.",
+        //     "Improved reliability and accessibility by successfully migrating the applications from the new acquisition to LGC's infrastructure, resulting in a 99.9% uptime and seamless access for users.",
+        //     "Documented: development procedures, tools,  user manuals, website troubleshooting for customer service, daily website update flow, career updates guide.",
+        //     "Improved catalogue on the website by 95% developing a Catalogue Management Tool (CMT) and Missing Image Identifier (MII) using Python (pandas) which generates and sends reports of missing data and images to respective departments.",
+        //     "Automated uploading documents, images and data to website seamlessly by writing Python scripts which led to 100% manual free uploads.",
+        // ],
     },
     {
         title: "Web Developer",
@@ -194,13 +194,13 @@ const experiences = [
         icon: lgc,
         iconBg: "#E6DEDD",
         date: "Jun 2020 - Sep 2022",
-        points: [
-            "Streamlined order processing and improved customer experience by integrating the website's order processing with Salesforce API, reducing manual work by 90%.",
-            "Accomplished 100% better tracking and analysis of user data by integrating website user registration with Pardot, leading to  improved insights and targeted marketing efforts.",
-            "Optimized website to handle 1 million+ users monthly by caching, database restructure and code.",
-            "Trained customer service and order processing to adapt to rapid website improvements.",
-            "Established accessibility by making sure all pages are designed in a way that supports accessibility.",
-        ],
+        // points: [
+        //     "Streamlined order processing and improved customer experience by integrating the website's order processing with Salesforce API, reducing manual work by 90%.",
+        //     "Accomplished 100% better tracking and analysis of user data by integrating website user registration with Pardot, leading to  improved insights and targeted marketing efforts.",
+        //     "Optimized website to handle 1 million+ users monthly by caching, database restructure and code.",
+        //     "Trained customer service and order processing to adapt to rapid website improvements.",
+        //     "Established accessibility by making sure all pages are designed in a way that supports accessibility.",
+        // ],
     },
     {
         title: "Web Developer",
@@ -208,12 +208,12 @@ const experiences = [
         icon: trc,
         iconBg: "#383E56",
         date: "Jan 2020 - Jun 2020",
-        points: [
-            "Maintained high customer satisfaction with a Net Promoter Score (NPS) of 9 by incorporating analytics tools and working closely with the Marketing Team and Business Analysts.",
-            "Served as a subject matter expert on website UX/UI, best practices, integrations, and troubleshooting for internal teams and external vendors worldwide.",
-            "Boosted online revenue by 290.15% through the integration of the Braintree Payment Gateway.",
-            "Developed custom WordPress themes, templates, and plugins while following best practices for both Toronto Research Chemicals and Synfine Research Limited websites (currently discontinued).",
-        ],
+        // points: [
+        //     "Maintained high customer satisfaction with a Net Promoter Score (NPS) of 9 by incorporating analytics tools and working closely with the Marketing Team and Business Analysts.",
+        //     "Served as a subject matter expert on website UX/UI, best practices, integrations, and troubleshooting for internal teams and external vendors worldwide.",
+        //     "Boosted online revenue by 290.15% through the integration of the Braintree Payment Gateway.",
+        //     "Developed custom WordPress themes, templates, and plugins while following best practices for both Toronto Research Chemicals and Synfine Research Limited websites (currently discontinued).",
+        // ],
     },
     {
         title: "Junior Web Developer",
@@ -221,13 +221,13 @@ const experiences = [
         icon: trc,
         iconBg: "#E6DEDD",
         date: "Sep 2018 - Dec 2019",
-        points: [
-            "Increased daily active users by 258.30 % by spearheading custom eCommerce to the existing website.",
-            "Enhanced customer satisfaction by designing a user-friendly shopping UI/UX - NPS score of 9.",
-            "Improved user experience and sales by piloting a chemical structure search tool (page value of 54.04%). (https://www.trc-canada.com/structure-search/)",
-            "Established custom quotation and bulk order tool raising page value to 29.74% revenue. ",
-            "Introduced and implemented Google Analytics to website, significantly improving user tracking and driving sales growth",
-        ],
+        // points: [
+        //     "Increased daily active users by 258.30 % by spearheading custom eCommerce to the existing website.",
+        //     "Enhanced customer satisfaction by designing a user-friendly shopping UI/UX - NPS score of 9.",
+        //     "Improved user experience and sales by piloting a chemical structure search tool (page value of 54.04%). (https://www.trc-canada.com/structure-search/)",
+        //     "Established custom quotation and bulk order tool raising page value to 29.74% revenue. ",
+        //     "Introduced and implemented Google Analytics to website, significantly improving user tracking and driving sales growth",
+        // ],
     },
 ];
 
@@ -332,7 +332,7 @@ const works = [
             },
         ],
         image: chris,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://silverbrushstudio.com/",
     },
     {
         name: "Infratec",
@@ -438,9 +438,9 @@ const projects = [
         source_code_link: "https://web-wrapper.com/",
     },
     {
-        name: "Sypder Web",
+        name: "QrBizID",
         description:
-            "Spyder Web: Rediscover the power of community and meaningful connections with our revolutionary app that brings people together, allowing users to create and join events in their area, fostering socialization and bridging the gap between communities while offering exclusive promotional opportunities for local businesses.",
+            "QrBizID: A Laravel-based web application for creating and managing digital business cards with QR code integration.",
         tags: [
             {
                 name: "laravel",
@@ -455,7 +455,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: spyderWeb,
+        image: qrbizid,
         source_code_link: "https://github.com/nithinkzy/laravel-syderweb",
     },
     {
