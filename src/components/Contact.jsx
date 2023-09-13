@@ -32,7 +32,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Nithin",
           from_email: form.email,
-          to_email: "nithinkzy@gmail.com",
+          to_email: "nithin@whoisnithin.com",
           message: form.message,
         },
         "pCBfddPotORuT5TQR"
@@ -63,8 +63,13 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
-        <p className={`${styles.sectionSubText} animate-pulse`}>Let's change the world with Code.</p>
+        <p className={`${styles.sectionSubText} animate-pulse`}>
+          Let's change the world with Code.
+        </p>
         <h3 className={styles.sectionHeadText}>Let's Talk.</h3>
+        <a href="mailto:nithin@whoisnithin.com" className="font-bold">
+          Email @ nithin@whoisnithin.com
+        </a>
 
         <form
           ref={formRef}

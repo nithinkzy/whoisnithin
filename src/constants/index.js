@@ -447,7 +447,7 @@ const projects = [
                 color: "blue-text-gradient",
             },
             {
-                name: "bootstrap",
+                name: "tailwindcss",
                 color: "green-text-gradient",
             },
             {
@@ -456,7 +456,7 @@ const projects = [
             },
         ],
         image: qrbizid,
-        source_code_link: "https://github.com/nithinkzy/laravel-syderweb",
+        source_code_link: "https://qrbizid.com/",
     },
     {
         name: "Twin Tanker",
