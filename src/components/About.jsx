@@ -9,7 +9,7 @@ import { SectionWrapper } from "../hoc";
 
 const ServiceCard = ({ index, title, sub, icon }) => {
   return (
-    <Tilt className="xs:w-[20%] w-[80%] snap-center shrink-0">
+    <Tilt className="w-[230px]">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card "
@@ -85,7 +85,7 @@ const About = () => {
       <motion.p variants={fadeIn("", "", 0.1, 1)} className="text-center mt-6">
         Fascinating Facts About Me
       </motion.p>
-      <div className="mt-10 w-full flex justify-between gap-6 snap-x snap-mandatory  ">
+      <div className="mt-10 grid grid-cols-2 lg:grid-rows-1 lg:grid-cols-4 gap-6 justify-center place-items-center">
         {/* <div class="snap-center shrink-0">
           <div class="shrink-0 w-4 sm:w-48"></div>
         </div> */}
