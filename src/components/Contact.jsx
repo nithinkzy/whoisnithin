@@ -35,7 +35,7 @@ const Contact = () => {
           to_email: "nithinkzy@gmail.com",
           message: form.message,
         },
-        "pCBfddPotORuT5TQR)"
+        "pCBfddPotORuT5TQR"
       )
       .then(
         () => {
