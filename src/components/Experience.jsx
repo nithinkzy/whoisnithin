@@ -4,7 +4,7 @@ import {
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
-
+import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -49,8 +49,10 @@ const ExperienceCard = ({ experience }) => (
 const Experience = () => {
   return (
     <>
-      <motion.div >
-        <p className={`${styles.sectionSubText} animate-pulse`}>What I have done</p>
+      <motion.div>
+        <p className={`${styles.sectionSubText} animate-pulse`}>
+          What I have done
+        </p>
         <h2 className={styles.sectionHeadText}>Work Experience.</h2>
       </motion.div>
 
@@ -62,13 +64,19 @@ const Experience = () => {
         </VerticalTimeline>
       </div>
 
-      <p className="mt-20 text-center">
-        Click  {" "}
+      {/* <p className="mt-20 text-center">
+        Click{" "}
         <span className="animate-pulse underline underline-offset-8 hover:underline-offset-2">
-          <a href="src/assets/NithinKumar_KollerethuSuresh.pdf">here</a>{" "}
+          <Link
+            to="NithinKumar_KollerethuSuresh.pdf"
+            target="_blank"
+            download
+          >
+            here
+          </Link>{" "}
         </span>
         to Download Full Resume.
-      </p>
+      </p> */}
     </>
   );
 };
